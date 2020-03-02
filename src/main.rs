@@ -17,7 +17,6 @@ fn main() -> std::io::Result<()> {
     let mut ctx = defs::ExecutionContext::new(src_file_contents);
 
     // TODO: add configs for stuff like debugging and single stepping?
-
     ctx.execute_all();
 
     Ok(())
