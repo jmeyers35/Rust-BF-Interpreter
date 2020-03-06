@@ -8,3 +8,7 @@ edition = "2018"
 
 [dependencies]
 clap = "2.33.0"
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
