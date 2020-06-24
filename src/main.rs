@@ -1,8 +1,9 @@
 use clap::{Arg, App};
 use std::fs;
 
-mod lib;
-use lib::ExecutionContext;
+mod bf;
+mod ir;
+use bf::ExecutionContext;
 
 fn main() -> std::io::Result<()> {
     let matches = App::new("Brainfuck Interpeter")
